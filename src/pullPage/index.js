@@ -1,9 +1,10 @@
 
 import React from 'react'
+import DrawImg from './compoment/drawImg'
 function App() {
     return (
       <div className="App">
-        wwww
+        <DrawImg />
       </div>
     );
   }

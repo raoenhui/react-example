@@ -40,4 +40,22 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    (function (c, b) {
+      var d = b.documentElement;
+
+      function a() {
+        var e = d.clientWidth / 7.5;
+        d.style.fontSize = e + "px"
+      }
+      a();
+      c.addEventListener("resize", a);
+      c.addEventListener("pageshow", function (f) {
+        if (f.persisted) {
+          a()
+        }
+      })
+    }(window, document));
+
+  </script>
 </html>
