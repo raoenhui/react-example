@@ -30,9 +30,6 @@
 
 .App-dome{
   font-size: 24px;
-  width: 375px;
-  height: 375px;
-  background: #666;
 }
 
 @keyframes App-logo-spin {

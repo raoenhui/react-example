@@ -15,6 +15,18 @@ function App() {
         >
           pullPage(下拉监听，生成图片)
         </Link>
+        <Link
+          className="App-link"
+          to="/preLoadImg"
+        >
+          预加载图片
+        </Link>
+        <Link
+          className="App-link"
+          to="/preLoadImg1"
+        >
+          预加载图片(自己写的)
+        </Link>
       </header>
     </div>
   );
