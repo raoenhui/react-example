@@ -168,7 +168,7 @@
     "svgaplayerweb": "^2.3.0"
   },
   "author": "",
-  "license": "ISC",  
+  "license": "ISC",
   "eslintConfig": {
     "extends": "react-app",
     "plugins": [
@@ -195,7 +195,7 @@
     ]
   },
   "lint-staged": {
-    "src/**/**.js": [
+    "src/*.js": [
       "eslint --fix",
       "git add"
     ]

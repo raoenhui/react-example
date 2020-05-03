@@ -19,6 +19,7 @@ module.exports = {
         "react"
     ],
     "rules": {
+       
     }, 
     "extends": "react-app"
 };

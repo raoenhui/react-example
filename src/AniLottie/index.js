@@ -39,7 +39,6 @@ var imgAry = [
 const starAry = ['https://storage.360buyimg.com/enhui-myfile/flickHead_01.mp3?Expires=3733909996&AccessKey=suTYcZ0U6yaSeX1b&Signature=Dra4P1XPKRrSeUoiPMQSD38F3V8%3D', 'https://storage.360buyimg.com/h5-games/svga/CabinBoy.mp3?Expires=3734865233&AccessKey=V65O5WsaA0JVBSC4&Signature=GHacUcMj2ySgGviyis8xNqM89YE%3D'];
 const bgAry = ['https://storage.360buyimg.com/enhui-myfile/background.mp3?Expires=3733910686&AccessKey=suTYcZ0U6yaSeX1b&Signature=5jycIe6s4bpRPgkaUW1UTp4vYdM%3D', 'https://storage.360buyimg.com/h5-games/svga/bgMusic.mp3?Expires=3734865279&AccessKey=V65O5WsaA0JVBSC4&Signature=ZDrQXu9x2%2BrDdj%2FggVHuTnwpP4Y%3D',];
 
-var curIndex = 0;
 const SoundIconAct = new Array(6).fill(false);
 export default function AniLottie() {
   const svgRefs = useRef([]);
@@ -58,14 +57,17 @@ export default function AniLottie() {
     imgAry.map((val, i) => {
       initLottie(i)
     })
-    preLoad()
-    soundFun()
+
     return () => {
-      DataRef.current.lottieAry.map((obj) => {
+      DataRef.current.lottieAry && DataRef.current.lottieAry.map((obj) => {
         obj && obj.destroy();
       })
     }
-  }, [soundFun])
+  }, [])
+
+  useEffect(()=>{
+    soundFun(); 
+  },[])
 
   //控制声音方法
   function soundFun() {

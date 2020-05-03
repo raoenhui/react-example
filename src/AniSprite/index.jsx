@@ -9,7 +9,7 @@ export default function AniSprite(props) {
   var spriteSheet;
   useEffect(() => {
     init()
-  }, []);
+  }, [init]);
 
   function init() {
     var manifest = [
