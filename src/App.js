@@ -27,6 +27,24 @@ function App() {
         >
           预加载图片(自己写的)
         </Link>
+        <Link
+          className="App-link"
+          to="/svga"
+        >
+          svga动画案例
+        </Link>
+        <Link
+          className="App-link"
+          to="/lottie"
+        >
+          lottie动画案例
+        </Link>
+        <Link
+          className="App-link"
+          to="/sprite"
+        >
+          png序列帧动画案例
+        </Link>
       </header>
     </div>
   );

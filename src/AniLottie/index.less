@@ -1,0 +1,104 @@
+.MapPage {
+  // perspective: 1600px;
+
+  position: relative;
+  height: 800px;
+
+  .MapPage-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    .MapPage-icon-dot {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: red;
+      z-index: 10;
+
+      &.hide {
+        display: none
+      }
+    }
+
+    .MapPage-icon-con {
+      width: 50px;
+      height: 50px;
+      &.stop{
+        transform: rotate(90deg);
+      }
+      // &.active{
+      //   animation:whirl 1s linear infinite;
+      // }
+    }
+  }
+}
+
+.container {
+  // perspective: 500px;
+  // perspective-origin: 50% -108px;
+  // width: 128px;
+  // height: 100px;
+  // margin-left: -64px;
+  width: 256px;
+  height: 200px;
+  margin-left: -128px;
+
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  transition: transform 1s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  position: absolute;
+  left: 50%;
+  top: 500px;
+}
+
+.map-item {
+  position: absolute;
+  bottom: 0;
+  width: 256px;
+  height: 256px;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  -moz-transition: opacity 1s, -moz-transform 1s;
+  transition: opacity 1s, transform 1s;
+
+  .map-diaglog {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    width: 80px;
+    height: 60px;
+    background-color: red;
+    z-index: 10;
+  }
+  .map-diaglog-icon{
+    &.SoundIcon{
+      position: absolute;
+      top:3px;
+      left:12px;
+    }
+  }
+}
+
+.piece {
+  width: 256px;
+  // height: 256px;
+}
+
+.MapBtn {
+  // margin-top: 1300px;
+}
+
+// @keyframes whirl {
+//   from { transform: rotate(0deg); }
+//   to   { transform: rotate(360deg); }
+// }
