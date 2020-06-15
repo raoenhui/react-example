@@ -1,0 +1,27 @@
+@scale: 2;
+.pic {
+    margin:30px;
+    display:inline-block;
+    height:90px*@scale ;
+    width:65px * @scale;
+    background-position: -40px * @scale -44px * @scale;
+    background-image: url("https://static.runoob.com/images/mix/space-to-top.png");
+   
+  }
+  #pic{
+     animation: go 4.2s linear infinite;
+  }
+  
+  #pic1{
+     animation: .6s go steps(7) infinite;
+   
+  }
+  
+   @keyframes go  {
+     0% {
+        background-position-x: -40px * @scale;
+     }
+     100% {
+        background-position-x: -1040px * @scale;
+     }
+  }

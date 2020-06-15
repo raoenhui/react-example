@@ -41,9 +41,15 @@ function App() {
         </Link>
         <Link
           className="App-link"
+          to="/creatjs"
+        >
+          createjs动画案例
+        </Link>
+        <Link
+          className="App-link"
           to="/sprite"
         >
-          png序列帧动画案例
+          纯Css序列帧
         </Link>
       </header>
     </div>

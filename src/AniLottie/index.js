@@ -11,9 +11,7 @@ import SoundIcon from './compontents/SoundIcon';
 //https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio
 
 
-//https://juejin.im/post/5e15dcd151882577d34dca47
 //https://codepen.io/gwx-code/pen/yLyvPBJ?__cf_chl_jschl_tk__=5e07da3ef25fc98cbb9aa1758810d20c3e72d357-1586862791-0-AW8G8GJQEG8uCtEO_UDBqozEZBvehxOZZwJAqPUtO_mJPOPhAx808OLLHx7qE4XYlSmhpNn_nW4WCF-82W0ttfGW74_psl16GTkD-56uIYfZCv3-SOJ_gA1pOL8tbQ4IUwe3GbytM4HWmf67Uss3yuRwpM_N1-MbK1iOca6lLuBJbo2AFejZl4Oa54fvL1oUgdxnp_fyDCqZfrw62xU9Bd8AKGRAv6pvyHodyyJc4LWjh1tuZ9QodkC5xD9FmeBbeRUmsdSBL2g1OESNjNxCCJfUO3V83ZRv9k2exwFZ88lksToLdBS_EL_5gEsUfRGxSVcIsNtZy-PSIRWEgLqzTpNIsUBy1hyGXz9V9CEtWp1p
-//https://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/
 //https://github.com/Rcong/Carousel/tree/master/js
 //https://www.zhangxinxu.com/study/201209/pictures-3d-slide-view.html
 //https://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/
@@ -117,7 +115,6 @@ export default function AniLottie() {
         rej();
       }
     })
-
   }
 
   //初始化lottie

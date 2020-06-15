@@ -12,6 +12,7 @@ import PreLoadImg1 from './preLoadImg1/index'
 import AniSvga from './AniSvga'
 import AniLottie from './AniLottie'
 import AniSprite from './AniSprite'
+import AniCreatejs from './AniCreatejs'
 export default class RouteConfig extends React.Component {
   render() {
     return (
@@ -23,6 +24,7 @@ export default class RouteConfig extends React.Component {
           <Route path="/preLoadImg1" component={PreLoadImg1} />
           <Route path="/svga" component={AniSvga} />
           <Route path="/lottie" component={AniLottie} />
+          <Route path="/creatjs" component={AniCreatejs} />
           <Route path="/sprite" component={AniSprite} />
           <Redirect to="/" />
         </Switch>
