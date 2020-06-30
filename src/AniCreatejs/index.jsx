@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './index.less'
-import createjs from 'createjs-npm';
+// import createjs from 'createjs-npm';
+import createjs from 'jdyfe-createjs';
+import 'jdyfe-createjs/lib/ColorPlugin';
+
 //https://github.com/CodeAndWeb/easeljs-sprite-sheets-and-animations.git 
 export default function AniSprite(props) {
   var assets = [];//预加载的元素
